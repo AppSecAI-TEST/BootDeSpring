@@ -49,7 +49,7 @@ public class CobrandsController{
 	}
 	
 	@RequestMapping(method=RequestMethod.DELETE,value="/cobrands/{id}")
-	public void deleteCobrand(@RequestBody String id){
+	public void deleteCobrand(@PathVariable String id){
 		cobSer.deleteCobrand(id);
 	}
 	
